@@ -6,8 +6,16 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;padding:28px}
 .wrap{max-width:880px;margin:0 auto}
-h1{font-size:22px;margin:0 0 2px;letter-spacing:.3px}
-.sub{color:var(--mut);font-size:13px;margin-bottom:22px}
+.hdr{text-align:center;margin-bottom:24px}
+h1{font-size:30px;margin:0 0 4px;letter-spacing:.3px;font-weight:700}
+h1 .na{color:var(--a)} h1 .nb{color:var(--b)}
+h1 .vsep{color:var(--mut);font-weight:500;font-size:20px;margin:0 6px}
+.sub{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}
+.updated{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--mut);
+  background:var(--card);border:1px solid var(--line);border-radius:20px;padding:5px 14px}
+.dot-live{width:8px;height:8px;border-radius:50%;background:#4ade80;
+  box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}70%{box-shadow:0 0 0 7px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:18px}
 .card h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);margin:0 0 16px}
 .heads{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center}
@@ -60,8 +68,11 @@ td.dim{color:var(--mut)}
 .legend{display:flex;gap:18px;justify-content:center;font-size:12px;color:var(--mut);margin-top:4px}
 .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
 </style></head><body><div class="wrap">
-<h1>FACEIT CS2 — Head to Head</h1>
-<div class="sub">Iceey vs SlimBae · generated 2026-06-19 04:13</div>
+<div class="hdr">
+  <h1><span class="na">Iceey</span> <span class="vsep">vs</span> <span class="nb">SlimBae</span></h1>
+  <div class="sub">FACEIT CS2 · Head to Head</div>
+  <div class="updated"><span class="dot-live"></span>Last updated 2026-06-19 14:37 · refreshes hourly</div>
+</div>
 
 <div class="heads"><div class="pcard" style="--c:#f5a623">
           <img class="pav" src="https://assets.faceit-cdn.net/avatars/d93f24b0-65c0-45c7-907b-f628558414f2_1552848198009.jpg" alt="" onerror="this.style.display='none'">
